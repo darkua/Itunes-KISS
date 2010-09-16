@@ -1,0 +1,16 @@
+Itunes KISS
+
+Just a simple erlang script to remove all media duplicated files inside a directory, and subdirectories.
+
+In order to remove all your Itunes duplicated files:
+
+itunes_kiss:remove_duplicates("/Users/sergioveiga/Music/iTunes/iTunes\ Music").         
+ok
+
+All the process runs in background, so dont worry when it ends it will send this kind of message with the number of duplicated files removed.
+
+Duplicated files removed with sucess : 316
+
+I'm using as filter for duplicated songs {Title,Artist,Album} and the first found is the one that will remain.
+
+Would be nice to use a sophisticated filter that could ensure that we keep the file with better bitrate for example.
